@@ -1,0 +1,527 @@
+[
+  {
+    "name": "AppRoutingModule",
+    "file": "__path__/app/app-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forRoot(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 253,
+        "pos": 178,
+        "end": 220,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 178,
+          "end": 188,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 189,
+          "end": 220,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 174,
+              "pos": 191,
+              "end": 219,
+              "flags": 0,
+              "expression": {
+                "kind": 172,
+                "pos": 191,
+                "end": 211,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 191,
+                  "end": 203,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 204,
+                  "end": 211,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 212,
+                  "end": 218,
+                  "flags": 0,
+                  "text": "routes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "kind": 253,
+        "pos": 221,
+        "end": 247,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 221,
+          "end": 231,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 232,
+          "end": 247,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 234,
+              "end": 246,
+              "flags": 0,
+              "text": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppModule",
+    "file": "src/app/app.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "AppComponent",
+        "file": "src/app/app.component.ts",
+        "selector": "app-root",
+        "providers": [],
+        "templateUrl": [
+          "app.component.html"
+        ],
+        "styleUrls": [
+          "app.component.css"
+        ],
+        "__raw": [
+          {
+            "kind": 253,
+            "pos": 56,
+            "end": 79,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 68,
+              "end": 79,
+              "flags": 0,
+              "text": "app-root"
+            }
+          },
+          {
+            "kind": 253,
+            "pos": 80,
+            "end": 118,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 80,
+              "end": 94,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 95,
+              "end": 118,
+              "flags": 0,
+              "text": "./app.component.html"
+            }
+          },
+          {
+            "kind": 253,
+            "pos": 119,
+            "end": 156,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 119,
+              "end": 131,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 170,
+              "pos": 132,
+              "end": 156,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 134,
+                  "end": 155,
+                  "flags": 0,
+                  "text": "./app.component.css"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "SpotifyComponent"
+      },
+      {
+        "name": "SpotifySearchComponent"
+      },
+      {
+        "name": "SpotifySearchResultComponent"
+      },
+      {
+        "name": "AboutComponent",
+        "file": "app/about/about.component.ts",
+        "selector": "app-about",
+        "providers": [],
+        "templateUrl": [
+          "about.component.html"
+        ],
+        "styleUrls": [
+          "about.component.css"
+        ],
+        "__raw": [
+          {
+            "kind": 253,
+            "pos": 64,
+            "end": 88,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 64,
+              "end": 75,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 76,
+              "end": 88,
+              "flags": 0,
+              "text": "app-about"
+            }
+          },
+          {
+            "kind": 253,
+            "pos": 89,
+            "end": 129,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 89,
+              "end": 103,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 104,
+              "end": 129,
+              "flags": 0,
+              "text": "./about.component.html"
+            }
+          },
+          {
+            "kind": 253,
+            "pos": 130,
+            "end": 169,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 130,
+              "end": 142,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 170,
+              "pos": 143,
+              "end": 169,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 145,
+                  "end": 168,
+                  "flags": 0,
+                  "text": "./about.component.css"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "BrowserModule"
+      },
+      {
+        "ns": "UIRouterModule",
+        "name": "UIRouterModule.forRoot(args)"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [
+      {
+        "name": "AppComponent"
+      }
+    ],
+    "__raw": [
+      {
+        "kind": 253,
+        "pos": 706,
+        "end": 849,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 706,
+          "end": 721,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 722,
+          "end": 849,
+          "flags": 0,
+          "multiLine": true,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 724,
+              "end": 741,
+              "flags": 0,
+              "text": "AppComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 742,
+              "end": 763,
+              "flags": 0,
+              "text": "SpotifyComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 764,
+              "end": 791,
+              "flags": 0,
+              "text": "SpotifySearchComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 792,
+              "end": 825,
+              "flags": 0,
+              "text": "SpotifySearchResultComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 826,
+              "end": 845,
+              "flags": 0,
+              "text": "AboutComponent"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 253,
+        "pos": 850,
+        "end": 965,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 850,
+          "end": 860,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 861,
+          "end": 965,
+          "flags": 0,
+          "multiLine": true,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 863,
+              "end": 881,
+              "flags": 0,
+              "text": "BrowserModule"
+            },
+            {
+              "kind": 174,
+              "pos": 882,
+              "end": 961,
+              "flags": 0,
+              "expression": {
+                "kind": 172,
+                "pos": 882,
+                "end": 909,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 882,
+                  "end": 901,
+                  "flags": 0,
+                  "text": "UIRouterModule"
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 902,
+                  "end": 909,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 171,
+                  "pos": 910,
+                  "end": 960,
+                  "flags": 0,
+                  "properties": [
+                    {
+                      "kind": 253,
+                      "pos": 911,
+                      "end": 944,
+                      "flags": 0,
+                      "name": {
+                        "kind": 69,
+                        "pos": 911,
+                        "end": 918,
+                        "flags": 0,
+                        "text": "states"
+                      },
+                      "initializer": {
+                        "kind": 170,
+                        "pos": 919,
+                        "end": 944,
+                        "flags": 0,
+                        "elements": [
+                          {
+                            "kind": 69,
+                            "pos": 921,
+                            "end": 931,
+                            "flags": 0,
+                            "text": "helloState"
+                          },
+                          {
+                            "kind": 69,
+                            "pos": 932,
+                            "end": 943,
+                            "flags": 0,
+                            "text": "aboutState"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "kind": 253,
+                      "pos": 945,
+                      "end": 959,
+                      "flags": 0,
+                      "name": {
+                        "kind": 69,
+                        "pos": 945,
+                        "end": 953,
+                        "flags": 0,
+                        "text": "useHash"
+                      },
+                      "initializer": {
+                        "kind": 99,
+                        "pos": 954,
+                        "end": 959,
+                        "flags": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "kind": 253,
+        "pos": 966,
+        "end": 982,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 966,
+          "end": 978,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 979,
+          "end": 982,
+          "flags": 0,
+          "elements": []
+        }
+      },
+      {
+        "kind": 253,
+        "pos": 983,
+        "end": 1011,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 983,
+          "end": 995,
+          "flags": 0,
+          "text": "bootstrap"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 996,
+          "end": 1011,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 998,
+              "end": 1010,
+              "flags": 0,
+              "text": "AppComponent"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
