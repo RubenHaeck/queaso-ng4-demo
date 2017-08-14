@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Paging } from './../models/paging';
 
 @Component({
   selector: 'app-spotify-search-result',
@@ -6,10 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./spotify-search-result.component.css']
 })
 export class SpotifySearchResultComponent implements OnInit {
-  public result: any = [
-    {name: 'JLo', album: 'Jenny from the block'},
-    {name: 'Sash!', album: 'Trilenium'}
-  ];
+  @Input()
+  public result: Paging;
 
   constructor() { }
 

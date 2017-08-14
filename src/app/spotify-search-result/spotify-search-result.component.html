@@ -1,8 +1,9 @@
-<div>
+<div *ngIf="result">
   <table>
-    <tr *ngFor="let artist of result">
+    <tr *ngFor="let artist of result.items">
       <td>{{artist.name}}</td>
-      <td>{{artist.album}}</td>
+      <td>{{artist.id}}</td>
+      <td>{{artist.popularity}}</td>
     </tr>
   </table>
 </div>
