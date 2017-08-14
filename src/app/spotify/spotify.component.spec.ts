@@ -1,6 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpModule } from '@angular/http';
 
 import { SpotifyComponent } from './spotify.component';
+import { SpotifySearchComponent } from './../spotify-search/spotify-search.component';
+import { SpotifySearchResultComponent } from './../spotify-search-result/spotify-search-result.component';
+
+import { SpotifyService } from './../spotify.service';
 
 describe('SpotifyComponent', () => {
   let component: SpotifyComponent;
@@ -8,7 +13,13 @@ describe('SpotifyComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SpotifyComponent ]
+      declarations: [
+        SpotifyComponent,
+        SpotifySearchComponent,
+        SpotifySearchResultComponent ],
+      providers : [ SpotifyService ],
+      imports : [ HttpModule ]
+
     })
     .compileComponents();
   }));
@@ -20,6 +31,6 @@ describe('SpotifyComponent', () => {
   });
 
   it('should be created', () => {
-    expect(component).toBeTruthy();
+    expect(component).toBeTruthy();  
   });
 });
