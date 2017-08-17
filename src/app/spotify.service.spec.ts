@@ -1,11 +1,11 @@
-import { TestBed, inject } from '@angular/core/testing';
+import { TestBed, inject, async } from '@angular/core/testing';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { HttpModule, Http, BaseRequestOptions, XHRBackend, Response, ResponseOptions } from '@angular/http';
 
 import { SpotifyService } from './spotify.service';
 
 describe('SpotifyService', () => {
-  beforeEach(() => {
+  beforeEach(async(() => {
     TestBed.configureTestingModule({
       providers: [
           SpotifyService,
@@ -15,7 +15,7 @@ describe('SpotifyService', () => {
         ],
       imports : [HttpModule]
     });
-  });
+  }));
 
   it('should be created', inject([SpotifyService], (service: SpotifyService) => {
     expect(service).toBeTruthy();
@@ -38,6 +38,8 @@ describe('SpotifyService', () => {
         service.searchArtist('hello').subscribe((artists) => {
             expect(artists).toBeTruthy();
             expect(artists.href).toEqual('http://localhost/spotify/search');
+            expect(artists.items.length).toBe(0);
+            console.log('dit is een test');
             console.log(artists);
         });
     }));

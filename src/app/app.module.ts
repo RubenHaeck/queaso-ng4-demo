@@ -8,11 +8,15 @@ import { SpotifyComponent } from './spotify/spotify.component';
 import { SpotifySearchComponent } from './spotify-search/spotify-search.component';
 import { SpotifySearchResultComponent } from './spotify-search-result/spotify-search-result.component';
 import { AboutComponent } from './about/about.component';
+import { SpotifyLoginComponent } from './spotify-login/spotify-login.component';
 
 import { SpotifyService } from './spotify.service';
+import { SpotifyAuthorizationService } from './spotify-authorization.service';
 
-const helloState: Ng2StateDeclaration = { name: 'hello', url: '/hello', component: SpotifyComponent};
-const aboutState: Ng2StateDeclaration = { name: 'about', url: '/about', component: AboutComponent};
+import { appModuleStates, uiRouterConfigFn } from './app.routes';
+import { SpotifyDetailComponent } from './spotify-detail/spotify-detail.component';
+import { PersonComponent } from './person/person.component';
+import { PersonDetailComponent } from './person-detail/person-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,15 +24,20 @@ const aboutState: Ng2StateDeclaration = { name: 'about', url: '/about', componen
     SpotifyComponent,
     SpotifySearchComponent,
     SpotifySearchResultComponent,
-    AboutComponent
+    AboutComponent,
+    SpotifyLoginComponent,
+    SpotifyDetailComponent,
+    PersonComponent,
+    PersonDetailComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    UIRouterModule.forRoot({ states: [helloState, aboutState], useHash: true})
+    UIRouterModule.forRoot({ states: appModuleStates, useHash: true, config: uiRouterConfigFn })
   ],
   providers: [
-    SpotifyService
+    SpotifyService,
+    SpotifyAuthorizationService
   ],
   bootstrap: [AppComponent]
 })

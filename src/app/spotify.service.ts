@@ -1,26 +1,32 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, URLSearchParams } from '@angular/http';
+import { Http, Response, URLSearchParams, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 
 import { Paging } from './models/paging';
+import { clientId, clienSecret } from './config';
 
 @Injectable()
 export class SpotifyService {
 
-  private spotifyUrl = 'http://localhost:8014/artists';
+  private spotifyUrl = 'https://api.spotify.com/v1/search';
 
   constructor(private http: Http) { }
 
   public searchArtist(search: string): Observable<Paging> {
-    let params: URLSearchParams = new URLSearchParams();
+
+    const authorizationHeader: Headers = new Headers();
+    authorizationHeader.set('Authorization', 'Basic ' + btoa(clientId + ':' + clienSecret));
+
+    const params: URLSearchParams = new URLSearchParams();
     params.set('q', search);
     params.set('type', 'artist');
 
     return this.http.get(this.spotifyUrl, {
-      search : params
+      search : params,
+      headers : authorizationHeader
     })
       .map((res: Response) => res.json())
-      .catch((error: any) => Observable.throw(error.json().error) || 'Server error');
+      .catch((error: any) => Observable.throw(error) || 'Server error');
   }
 
 }

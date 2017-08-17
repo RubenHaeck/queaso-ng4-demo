@@ -5,15 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug tests",
             "type": "chrome",
             "request": "attach",
-            "name": "Attach Karma Chrome",
-            "address": "localhost",
-            "port": 9333,
-            "pathMapping": {
-                "/": "${workspaceRoot}/",
-                "/base/": "${workspaceRoot}/"
-            }
+            "port": 9222,
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
         }
     ]
 }
