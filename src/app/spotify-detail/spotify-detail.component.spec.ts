@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { UIRouterModule } from '@uirouter/angular';
 
 import { SpotifyDetailComponent } from './spotify-detail.component';
 
@@ -8,7 +9,8 @@ describe('SpotifyDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SpotifyDetailComponent ]
+      declarations: [ SpotifyDetailComponent ],
+      imports : [ UIRouterModule.forRoot({ useHash: true})]
     })
     .compileComponents();
   }));

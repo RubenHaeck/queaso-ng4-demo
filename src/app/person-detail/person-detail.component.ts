@@ -11,7 +11,7 @@ export class PersonDetailComponent implements OnInit {
   constructor(private stateService: StateService) { }
 
   ngOnInit() {
-    console.log(this.stateService.params['personId']);
+    
   }
 
 }

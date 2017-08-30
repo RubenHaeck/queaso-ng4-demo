@@ -17,6 +17,7 @@ import { appModuleStates, uiRouterConfigFn } from './app.routes';
 import { SpotifyDetailComponent } from './spotify-detail/spotify-detail.component';
 import { PersonComponent } from './person/person.component';
 import { PersonDetailComponent } from './person-detail/person-detail.component';
+import { CamelCasePipe } from './camel-case.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PersonDetailComponent } from './person-detail/person-detail.component';
     SpotifyLoginComponent,
     SpotifyDetailComponent,
     PersonComponent,
-    PersonDetailComponent
+    PersonDetailComponent,
+    CamelCasePipe
   ],
   imports: [
     BrowserModule,

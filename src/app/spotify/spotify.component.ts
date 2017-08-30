@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { SpotifyService } from './../spotify.service';
+import { ISpotifyService } from './../spotify-service';
 import { Paging} from './../models/paging';
 
 @Component({
@@ -12,7 +13,7 @@ export class SpotifyComponent implements OnInit {
 
   artists: Paging;
 
-  constructor(private spotifyService: SpotifyService) { }
+  constructor(private spotifyService: ISpotifyService) { }
 
   ngOnInit() {
   }

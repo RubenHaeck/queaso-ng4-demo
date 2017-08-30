@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { StateParams } from '@uirouter/angular';
 
 @Component({
   selector: 'app-spotify-detail',
@@ -8,10 +7,10 @@ import { StateParams } from '@uirouter/angular';
 })
 export class SpotifyDetailComponent implements OnInit {
 
-  constructor(private stateParams: StateParams) { }
+  constructor() { }
 
   ngOnInit() {
-    console.log(this.stateParams['id']);
+    console.log('Start initializing SpotifyDetailComponent');
   }
 
 }

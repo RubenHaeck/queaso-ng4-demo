@@ -4,9 +4,10 @@ import { Observable } from 'rxjs/Rx';
 
 import { Paging } from './models/paging';
 import { clientId, clienSecret } from './config';
+import { ISpotifyService } from './spotify-service';
 
 @Injectable()
-export class SpotifyService {
+export class SpotifyService implements ISpotifyService {
 
   private spotifyUrl = 'https://api.spotify.com/v1/search';
 

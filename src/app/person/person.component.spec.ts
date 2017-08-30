@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { UIRouterModule } from '@uirouter/angular';
 
 import { PersonComponent } from './person.component';
 
@@ -8,7 +9,8 @@ describe('PersonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PersonComponent ]
+      declarations: [ PersonComponent ],
+      imports : [ UIRouterModule.forRoot( { useHash: true })]
     })
     .compileComponents();
   }));

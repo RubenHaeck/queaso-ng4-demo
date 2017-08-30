@@ -3,7 +3,7 @@
   <ul>
     <li *ngFor="let person of persons">
       <a uiSref="person.detail" [uiParams]="{ personId: person.id }">
-        {{person.name }} {{ person.firstName }}
+        {{person.name }} {{ person.firstName | camelCase }}
       </a>
     </li>
   </ul>
